@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fagments.RegistrationFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.budiyev.android.codescanner.CodeScannerView
+                android:id="@+id/scanner_v"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                app:autoFocusButtonColor="@android:color/white"
+                app:autoFocusButtonVisible="true"
+                app:flashButtonColor="@android:color/white"
+                app:flashButtonVisible="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:maskColor="#C4000000" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/reg_std_padding"
+                android:layout_marginTop="@dimen/reg_std_padding"
+                android:layout_marginRight="@dimen/reg_std_padding">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_email_r"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="email"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/reg_std_padding"
+                android:layout_marginTop="@dimen/reg_std_padding"
+                android:layout_marginRight="@dimen/reg_std_padding">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_p_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="phone number"
+                    android:inputType="phone" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/reg_std_padding"
+                android:layout_marginTop="@dimen/reg_std_padding"
+                android:layout_marginRight="@dimen/reg_std_padding">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_password_r"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/reg_std_padding"
+                android:layout_marginTop="@dimen/reg_std_padding"
+                android:layout_marginRight="@dimen/reg_std_padding">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_re_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="re-enter password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/bn_reg_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/reg_std_padding"
+                android:layout_marginTop="@dimen/reg_std_padding"
+                android:layout_marginRight="@dimen/reg_std_padding"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="done"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
